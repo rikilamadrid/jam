@@ -38,8 +38,8 @@ export async function getStaticProps({ params }) {
       redirect: {
         destination: '/',
         permanent: false,
-      };
-    };
+      }
+    }
   }
 
   return {
