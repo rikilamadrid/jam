@@ -33,6 +33,15 @@ export async function getStaticProps({ params }) {
     'fields.slug': params.slug,
   });
 
+  if (!items.lenght) {
+    return {
+      redirect: {
+        destination: '/',
+        permanent: false,
+      };
+    };
+  };
+
   return {
     props: {
       recipe: items[0],
@@ -43,6 +52,7 @@ export async function getStaticProps({ params }) {
 
 export default function RecipeDetails({ recipe }) {
   if (!recipe) return <Skeleton />;
+
   const {
     featureImage,
     title,
