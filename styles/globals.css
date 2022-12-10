@@ -41,6 +41,8 @@ header h2 {
   font-weight: 400;
 }
 footer {
+  display: flex;
+  justify-content: center;
   background: #111;
   color: #bbb;
   padding: 40px;
