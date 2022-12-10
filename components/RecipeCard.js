@@ -21,7 +21,7 @@ export default function RecipeCard({ recipe }) {
       <div className="content">
         <div className="info">
           <h4>{title}</h4>
-          <p>Takes approx { cookingTime} mins to make</p>
+          <p>Takes approx { cookingTime} hrs to make</p>
         </div>
         <div className="actions">
           <Link href={`/recipes/${slug}`}>
